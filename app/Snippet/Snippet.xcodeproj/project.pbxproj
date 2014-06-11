@@ -14,13 +14,13 @@
 		DE5D29A6194901C100280119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29A5194901C100280119 /* main.m */; };
 		DE5D29AA194901C100280119 /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29A9194901C100280119 /* SNAppDelegate.m */; };
 		DE5D29AD194901C100280119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5D29AB194901C100280119 /* Main.storyboard */; };
-		DE5D29B0194901C100280119 /* SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29AF194901C100280119 /* SNViewController.m */; };
 		DE5D29B2194901C100280119 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5D29B1194901C100280119 /* Images.xcassets */; };
 		DE5D29B9194901C100280119 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D29B8194901C100280119 /* XCTest.framework */; };
 		DE5D29BA194901C100280119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D2999194901C100280119 /* Foundation.framework */; };
 		DE5D29BB194901C100280119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D299D194901C100280119 /* UIKit.framework */; };
 		DE5D29C3194901C100280119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5D29C1194901C100280119 /* InfoPlist.strings */; };
 		DE5D29C5194901C100280119 /* SnippetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29C4194901C100280119 /* SnippetTests.m */; };
+		DE5D29D01949039A00280119 /* SNAppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29CF1949039A00280119 /* SNAppListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		DE5D29A8194901C100280119 /* SNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNAppDelegate.h; sourceTree = "<group>"; };
 		DE5D29A9194901C100280119 /* SNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNAppDelegate.m; sourceTree = "<group>"; };
 		DE5D29AC194901C100280119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE5D29AE194901C100280119 /* SNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNViewController.h; sourceTree = "<group>"; };
-		DE5D29AF194901C100280119 /* SNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNViewController.m; sourceTree = "<group>"; };
 		DE5D29B1194901C100280119 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE5D29B7194901C100280119 /* SnippetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnippetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5D29B8194901C100280119 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DE5D29C0194901C100280119 /* SnippetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnippetTests-Info.plist"; sourceTree = "<group>"; };
 		DE5D29C2194901C100280119 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE5D29C4194901C100280119 /* SnippetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnippetTests.m; sourceTree = "<group>"; };
+		DE5D29CE1949039A00280119 /* SNAppListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNAppListViewController.h; sourceTree = "<group>"; };
+		DE5D29CF1949039A00280119 /* SNAppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNAppListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,9 @@
 			children = (
 				DE5D29A8194901C100280119 /* SNAppDelegate.h */,
 				DE5D29A9194901C100280119 /* SNAppDelegate.m */,
+				DE5D29CE1949039A00280119 /* SNAppListViewController.h */,
+				DE5D29CF1949039A00280119 /* SNAppListViewController.m */,
 				DE5D29AB194901C100280119 /* Main.storyboard */,
-				DE5D29AE194901C100280119 /* SNViewController.h */,
-				DE5D29AF194901C100280119 /* SNViewController.m */,
 				DE5D29B1194901C100280119 /* Images.xcassets */,
 				DE5D29A0194901C100280119 /* Supporting Files */,
 			);
@@ -250,8 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5D29D01949039A00280119 /* SNAppListViewController.m in Sources */,
 				DE5D29A6194901C100280119 /* main.m in Sources */,
-				DE5D29B0194901C100280119 /* SNViewController.m in Sources */,
 				DE5D29AA194901C100280119 /* SNAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

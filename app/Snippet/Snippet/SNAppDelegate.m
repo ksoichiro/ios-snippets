@@ -2,17 +2,26 @@
 //  SNAppDelegate.m
 //  Snippet
 //
-//  Created by 鹿島 聡一郎 on 2014/06/12.
-//  Copyright (c) 2014年 ksoichiro. All rights reserved.
+//  Copyright (c) 2014 Soichiro Kashima. All rights reserved.
 //
 
 #import "SNAppDelegate.h"
+#import "SNAppListViewController.h"
 
 @implementation SNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIViewController *vc = [[SNAppListViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navi;
+    self.window.frame = [[UIScreen mainScreen] bounds];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
