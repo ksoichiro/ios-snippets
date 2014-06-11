@@ -21,6 +21,7 @@
 		DE5D29C3194901C100280119 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5D29C1194901C100280119 /* InfoPlist.strings */; };
 		DE5D29C5194901C100280119 /* SnippetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29C4194901C100280119 /* SnippetTests.m */; };
 		DE5D29D01949039A00280119 /* SNAppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29CF1949039A00280119 /* SNAppListViewController.m */; };
+		DE5D29D31949071800280119 /* SNJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D29D21949071800280119 /* SNJSONViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DE5D29C4194901C100280119 /* SnippetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnippetTests.m; sourceTree = "<group>"; };
 		DE5D29CE1949039A00280119 /* SNAppListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNAppListViewController.h; sourceTree = "<group>"; };
 		DE5D29CF1949039A00280119 /* SNAppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNAppListViewController.m; sourceTree = "<group>"; };
+		DE5D29D11949071800280119 /* SNJSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJSONViewController.h; sourceTree = "<group>"; };
+		DE5D29D21949071800280119 /* SNJSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNJSONViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				DE5D29AB194901C100280119 /* Main.storyboard */,
 				DE5D29B1194901C100280119 /* Images.xcassets */,
 				DE5D29A0194901C100280119 /* Supporting Files */,
+				DE5D29D11949071800280119 /* SNJSONViewController.h */,
+				DE5D29D21949071800280119 /* SNJSONViewController.m */,
 			);
 			path = Snippet;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				DE5D29D01949039A00280119 /* SNAppListViewController.m in Sources */,
 				DE5D29A6194901C100280119 /* main.m in Sources */,
 				DE5D29AA194901C100280119 /* SNAppDelegate.m in Sources */,
+				DE5D29D31949071800280119 /* SNJSONViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
