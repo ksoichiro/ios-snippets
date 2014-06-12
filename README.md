@@ -1,4 +1,4 @@
-# ios-snippets
+# ![](images/Icon-Small.png) ios-snippets
 
 Snippet codes for iOS apps.
 
