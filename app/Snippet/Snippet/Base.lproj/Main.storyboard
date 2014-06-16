@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AsI-wt-LPb">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellJSON" id="AsI-wt-LPb">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AsI-wt-LPb" id="XPX-Vk-Ph9">
@@ -21,7 +21,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="kYh-JJ-RX8" kind="push" identifier="JSON" id="Oc5-7Z-M0E"/>
+                                    <segue destination="kYh-JJ-RX8" kind="push" identifier="JSON" id="59I-tk-STv"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellWebView" id="Rpe-is-P1b">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rpe-is-P1b" id="ptD-Me-D6I">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UEX-E4-u1j" kind="push" identifier="WebView" id="mAV-YN-u7j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -34,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="My8-3W-RhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="141"/>
+            <point key="canvasLocation" x="-232" y="141"/>
         </scene>
         <!--View Controller - JSON Export-->
         <scene sceneID="9bY-QS-6mI">
@@ -73,7 +84,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQC-C1-a7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="141"/>
+            <point key="canvasLocation" x="311" y="141"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="g0p-Mk-GZc">
+            <objects>
+                <viewController id="UEX-E4-u1j" customClass="SNWebViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="Bw8-1p-WFb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="mhR-ox-sMt"/>
+                    <connections>
+                        <outlet property="webView" destination="Bw8-1p-WFb" id="rNu-di-VG3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YB9-gn-0kt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ezX-Fo-8n2">

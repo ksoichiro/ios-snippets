@@ -20,41 +20,48 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
     switch (section) {
         case 0:
-            return 1;
+            return 2;
     }
     return 0;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    
+    UITableViewCell *cell = nil;
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
+            cell = [self tableView:tableView cellWithIdentifier:@"CellJSON"];
             [cell.textLabel setText:@"JSON Export"];
+        } else if (indexPath.row == 1) {
+            cell = [self tableView:tableView cellWithIdentifier:@"CellWebView"];
+            [cell.textLabel setText:@"UIWebView"];
         }
     }
     
     return cell;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView
+            cellWithIdentifier:(NSString *)cellIdentifier
+{
+    UITableViewCell *cell =
+        [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:cellIdentifier];
+    }
+    return cell;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            [self performSegueWithIdentifier:@"JSON" sender:self];
-        }
-    }
 }
 
 @end
