@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE12DAC519A3A1BB0070CDE3 /* SNPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12DAC419A3A1BB0070CDE3 /* SNPickerViewController.m */; };
+		DE12DAC819A3A5E40070CDE3 /* SNDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12DAC719A3A5E40070CDE3 /* SNDatePickerViewController.m */; };
 		DE5D299A194901C100280119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D2999194901C100280119 /* Foundation.framework */; };
 		DE5D299C194901C100280119 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D299B194901C100280119 /* CoreGraphics.framework */; };
 		DE5D299E194901C100280119 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D299D194901C100280119 /* UIKit.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE12DAC319A3A1BB0070CDE3 /* SNPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPickerViewController.h; sourceTree = "<group>"; };
+		DE12DAC419A3A1BB0070CDE3 /* SNPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPickerViewController.m; sourceTree = "<group>"; };
+		DE12DAC619A3A5E40070CDE3 /* SNDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDatePickerViewController.h; sourceTree = "<group>"; };
+		DE12DAC719A3A5E40070CDE3 /* SNDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDatePickerViewController.m; sourceTree = "<group>"; };
 		DE5D2996194901C100280119 /* Snippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5D2999194901C100280119 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE5D299B194901C100280119 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +135,10 @@
 				DE5D29D21949071800280119 /* SNJSONViewController.m */,
 				DEC77476194F3826008DC1F5 /* SNWebViewController.h */,
 				DEC77477194F3826008DC1F5 /* SNWebViewController.m */,
+				DE12DAC319A3A1BB0070CDE3 /* SNPickerViewController.h */,
+				DE12DAC419A3A1BB0070CDE3 /* SNPickerViewController.m */,
+				DE12DAC619A3A5E40070CDE3 /* SNDatePickerViewController.h */,
+				DE12DAC719A3A5E40070CDE3 /* SNDatePickerViewController.m */,
 			);
 			path = Snippet;
 			sourceTree = "<group>";
@@ -261,10 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC77478194F3826008DC1F5 /* SNWebViewController.m in Sources */,
+				DE12DAC519A3A1BB0070CDE3 /* SNPickerViewController.m in Sources */,
 				DE5D29D01949039A00280119 /* SNAppListViewController.m in Sources */,
 				DE5D29A6194901C100280119 /* main.m in Sources */,
 				DE5D29AA194901C100280119 /* SNAppDelegate.m in Sources */,
 				DE5D29D31949071800280119 /* SNJSONViewController.m in Sources */,
+				DE12DAC819A3A5E40070CDE3 /* SNDatePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +342,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soichiro Kashima (3FFZV484T5)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;

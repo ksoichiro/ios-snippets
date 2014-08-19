@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vuE-g9-2Vc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vuE-g9-2Vc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
-        <!--App List View Controller - Snippets-->
+        <!--Snippets-->
         <scene sceneID="BoL-Al-wqj">
             <objects>
                 <tableViewController id="Xec-8Q-4Ad" customClass="SNAppListViewController" sceneMemberID="viewController">
@@ -35,6 +36,17 @@
                                     <segue destination="UEX-E4-u1j" kind="push" identifier="WebView" id="mAV-YN-u7j"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellPicker" id="LHM-bN-zle" userLabel="CellPicker">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LHM-bN-zle" id="dY1-3A-PMR">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="oo0-Mw-jFg" kind="push" identifier="Picker" id="zyg-jt-eLd"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Xec-8Q-4Ad" id="0Xi-Hx-4kb"/>
@@ -47,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-232" y="141"/>
         </scene>
-        <!--View Controller - JSON Export-->
+        <!--JSON Export-->
         <scene sceneID="9bY-QS-6mI">
             <objects>
                 <viewController id="kYh-JJ-RX8" customClass="SNJSONViewController" sceneMemberID="viewController">
@@ -61,14 +73,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9V-H6-jId">
                                 <rect key="frame" x="20" y="72" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Process">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CA-xo-g8I">
                                 <rect key="frame" x="20" y="110" width="280" height="438"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -104,6 +114,25 @@
             </objects>
             <point key="canvasLocation" x="311" y="814"/>
         </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="ryP-ki-qa4">
+            <objects>
+                <viewController id="oo0-Mw-jFg" customClass="SNPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zTE-aC-fXN"/>
+                        <viewControllerLayoutGuide type="bottom" id="0CN-O3-r86"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFa-Pk-K89">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xpF-ZZ-JPv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkH-N8-tnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="1499"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ezX-Fo-8n2">
             <objects>
@@ -123,6 +152,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

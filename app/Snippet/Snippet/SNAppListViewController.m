@@ -25,7 +25,7 @@
 {
     switch (section) {
         case 0:
-            return 2;
+            return 3;
     }
     return 0;
 }
@@ -41,6 +41,9 @@
         } else if (indexPath.row == 1) {
             cell = [self tableView:tableView cellWithIdentifier:@"CellWebView"];
             [cell.textLabel setText:@"UIWebView"];
+        } else if (indexPath.row == 2) {
+            cell = [self tableView:tableView cellWithIdentifier:@"CellPicker"];
+            [cell.textLabel setText:@"Picker"];
         }
     }
     
